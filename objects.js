@@ -77,19 +77,18 @@ const student = [
      }
 ]
 function getNames(students){
+    let newArr = [];
     students.forEach(student=>{
         let sum = student.scores.reduce((a,b)=>a+b);
-        const averageScore= sum/student.scores.length;
-        students.scores.reduce((total,score)=>total+
-        score,0)/ student.scores.length;
-        if(averageScore>=85){
+        const getNam= sum/student.scores.length;
+        if(getNam>=85){
             newNum.push(student.name)
         }
     });
     console.log(newNum);
     return newNum
 }
-
+getNames();
 const Car = {
     make: 'Ford',
     model: 'Ranger',
